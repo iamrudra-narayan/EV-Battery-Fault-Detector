@@ -41,5 +41,5 @@ const fetchData = async () => {
   }
   setInterval(() => {
     fetchData();
-  }, 30000);
+  }, 16000);
   fetchData();
