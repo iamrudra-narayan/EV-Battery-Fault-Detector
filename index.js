@@ -18,7 +18,7 @@ const fetchData = async () => {
     var temp_data = value(data);
 
     setInterval(value, 1000);
-    if (temp_data >= 28) {
+    if (temp_data >= 35) {
       document.getElementById("ct").innerHTML =
         "<p style='color:red;FONT-SIZE:25PX;font-family:arial;'><b>Warning</b></p><iframe width='310' height='220' style='border: 0px solid #cccccc;' src='https://thingspeak.com/channels/1842205/widgets/555564'></iframe><p style='color:red;FONT-SIZE:15PX;font-family:arial;padding-left:10px;'><b>Your Vehicle Battery suffering at Over Temperature!</b></p><p style='color:red;FONT-SIZE:20PX;font-family:monospace;padding-left:10px;'><b>Your Vehicle Battery is in Danger State</b></p><audio autoplay/><source src='/syron.mpeg' type='audio/mp3' style='visibility:hidden;'></audio>";
       const myTimeout = setTimeout(myGreeting, 2000);
