@@ -19,9 +19,8 @@ const fetchData = async () => {
 
     setInterval(value, 1000);
     if (temp_data >= 35) {
-      document.getElementById("ct").innerHTML =
-        "<p style='color:red;FONT-SIZE:25PX;font-family:arial;'><b>Warning</b></p><iframe width='310' height='220' style='border: 0px solid #cccccc;' src='https://thingspeak.com/channels/1955486/widgets/558083'></iframe>
-<p style='color:red;FONT-SIZE:15PX;font-family:arial;padding-left:10px;'><b>Your Vehicle Battery suffering at Over Temperature!</b></p><p style='color:red;FONT-SIZE:20PX;font-family:monospace;padding-left:10px;'><b>Your Vehicle Battery is in Danger State</b></p><audio autoplay/><source src='/syron.mpeg' type='audio/mp3' style='visibility:hidden;'></audio>";
+      document.getElementById("ct").innerHTML=
+        "<p style='color:red;FONT-SIZE:25PX;font-family:arial;'><b>Warning</b></p><iframe width=31 height=22 style=border: 0px solid #cccccc= src=https://thingspeak.com/channels/1955486/widgets/55808=></iframe><p style='color:red;FONT-SIZE:15PX;font-family:arial;padding-left:10px;'><b>Your Vehicle Battery suffering at Over Temperature!</b></p><p style='color:red;FONT-SIZE:20PX;font-family:monospace;padding-left:10px;'><b>Your Vehicle Battery is in Danger State</b></p><audio autoplay/><source src='/syron.mpeg' type='audio/mp3' style='visibility:hidden;'></audio>";
       const myTimeout = setTimeout(myGreeting, 2000);
       function myGreeting() {
         if (confirm("Press Ok to disconnect the BMS!")) {
