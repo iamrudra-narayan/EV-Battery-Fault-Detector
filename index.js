@@ -1,6 +1,6 @@
 const fetchData = async () => {
     var res = await fetch(
-      "https://api.thingspeak.com/channels/1842205/fields/1.json?results="
+      "https://api.thingspeak.com/channels/1955486/fields/1.json?results="
     );
     var feildData = await res.json();
  
